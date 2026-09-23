@@ -1,0 +1,26 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Cachés de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Datos crudos pesados: NO se versionan.
+# El CSV de CONASET pesa ~75 MB y GitHub rechaza archivos sobre 100 MB.
+# data/README.md explica cómo regenerarlo con data/descargar_datos.py.
+data/*.csv
+data/*.xlsx
+data/*.parquet
+
+# Credenciales: nunca al repositorio.
+.env
+*.json.key
+credentials*.json
+service-account*.json
+
+# Sistema
+.DS_Store
